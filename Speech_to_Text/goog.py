@@ -2,8 +2,7 @@ from os import path
 from process_video import make_audio_path, vtoa
 from upload_to_gcloud import upload_to_gcloud
 from google.cloud import speech
-from diarization_file import make_diarization_file as md_file
-from raw_text_file import make_raw_text_file as mr_file
+from write_file import make_diarization_file as md_file, make_raw_text_file as mr_file
 
 
 def transcribe_gcs(mp4_file):
