@@ -17,8 +17,7 @@
   * goog.py  
   
 #### 5. Write Text File
-  * write_file.py
-    - 2 options >>>
+  * write_file.py(2 options)
     - Make Speech_to_Text + Speech Diarization file
     - Make only Speech_to_Text file
     
