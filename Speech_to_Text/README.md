@@ -16,7 +16,7 @@
 #### 4. Google Speech_to_Text API
   * goog.py  
   
-#### 5. File Output
+#### 5. File Download
   * diarization.py
     - Make Speech_to_Text + Speech Diarization file
   * raw_text_file.py
