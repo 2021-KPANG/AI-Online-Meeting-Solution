@@ -10,8 +10,8 @@
   
 #### 3. Upload Google Cloud Storage
   * upload_to_gcloud.py
-    - Files of 1 minute or longer play time 
-    - Save to Google Cloud Stoarge bucket, upload it
+    - Files of 1 minute or longer play time should store in GCS bucket
+    - Save to bucket(GCS), upload it
   
 #### 4. Google Speech_to_Text API
   * goog.py  
