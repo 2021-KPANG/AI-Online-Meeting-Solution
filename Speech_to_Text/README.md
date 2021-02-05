@@ -9,7 +9,7 @@
     - use moviepy
   
 #### 3. Upload Google Cloud Storage
-  * goog.py
+  * upload_to_gcloud.py
     - Files of 1 minute or longer play time 
     - Save to Google Cloud Stoarge bucket, upload it
   
