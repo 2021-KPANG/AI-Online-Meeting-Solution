@@ -1,0 +1,3 @@
+--upgrade google-cloud-speech
+--upgrade google_cloud-storage
+moviepy~=1.0.3
