@@ -17,10 +17,10 @@
   * goog.py  
   
 #### 5. Write Text File
-  * diarization.py
-    - Make Speech_to_Text + Speech Diarization file
-  * raw_text_file.py
-    - Make only Speech_to_Text file
+  * write_file.py
+   - 2 option
+    > Make Speech_to_Text + Speech Diarization file
+    > Make only Speech_to_Text file
     
 #### 6. Run
   * run.py
