@@ -17,6 +17,7 @@ def transcribe_gcs(mp4_file):
         """Asynchronously transcribes the audio file specified by the gcs_uri."""
         
         client = speech.SpeechClient()
+        #client = speech.SpeechClient.from_service_account_json("/key.json")
         
         # bucket에서 오디오 파일가져오기 (파일형식 : gs://~)
         audio = speech.RecognitionAudio(
