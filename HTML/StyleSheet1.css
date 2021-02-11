@@ -1,0 +1,220 @@
+﻿*{
+        font-family: 'Poppins', sans-serif;
+        list-style: none;
+        text-decoration: none;
+        border-collapse: collapse;
+        margin: 0px;
+        padding: opx;
+        color: #000;
+
+    }
+
+    .headerLogo{
+        position: relative;
+        width: auto;
+        height: 50px;
+        margin: auto;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+        background:purple;
+
+    }
+
+    .headerLogo > span{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+        font-size: 33px;
+        color: white;
+        letter-spacing: 0.3em;
+    }
+
+    .headerProject{
+        position: relative;
+        width: auto;
+        height: 40px;
+        margin: 0 0 10px 0;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+        background:white;
+        box-shadow: 0 5px 5px #ccc;
+    }
+
+    .headerProject > span{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        font-size: 18px;
+        font-style: italic;
+        letter-spacing: 0.1em;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+    }
+
+    .makingmom {
+        position: relative;
+        width: auto;
+        height: 200px;
+        margin: auto;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+        background:white;
+        letter-spacing: 0.2em;
+    }
+
+    .makingmom > p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+        color:#8c8c8c
+    }
+
+    .makingmom > p > span{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+        color:#800080
+    }
+
+    .file{
+        position: relative;
+        width: auto;
+        height: 80px;
+        margin: auto;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+        background:white;
+    }
+
+    .filename{
+        position: relative;
+        width: 45%;
+        height: 50px;
+        border: 2px dashed;
+        border-radius: 7px;
+        margin: auto;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+        background:white;
+        border-color: #ab6eab;
+    }
+
+    .filename > p{
+        font-size: 16px;
+    }
+
+    .boxes{
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+    }
+
+    .box1{
+        width:200px;
+        height:200px;
+        background:#91B9F5;
+        margin: 50px;
+        font-size: 25px;
+        float: left;
+        border: 0;
+        box-shadow: 5px 5px 5px #ccc;
+    }
+    
+    .box1:hover{
+        background:#7DA5E1
+    }
+
+    .box2{
+        width:200px;
+        height:200px;
+        background:#9986EE;
+        float: left;
+        margin: 50px;
+        font-size: 25px;
+        border: 0;
+        box-shadow: 5px 5px 5px #ccc;
+    }
+
+    .box2:hover{
+        background:#8572EE;
+    }
+
+    .box3{
+        width:200px;
+        height:200px;
+        background:#E598BB;
+        float: left;
+        margin: 50px;
+        font-size: 25px;
+        border: 0;
+        box-shadow: 5px 5px 5px #ccc;
+    }
+
+    .box3:hover{
+        background:#DB84A7;
+    }
+
+    .file_select{
+        position: relative;
+        width: 50%;
+        height: 100px;
+        margin: auto;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+        background:white;
+
+    }
+    
+    .file_input_textbox{
+        float:left
+    }
+
+    .file_input_div{
+        position:relative;
+        width:100px;
+        height:23px;
+        margin:20px;
+        overflow:hidden;
+    }
+
+    .file_input_button{
+        width:100px;
+        font-weight: 400;
+        position:absolute; 
+        top:0px; 
+        background-color:#DDA0DD; 
+        color:#fff; 
+        border: none;
+        box-shadow: 5px 5px 5px #ccc;
+    }
+
+    .file_input_hidden{
+        font-size:45px; 
+        position:absolute; 
+        right:0px; 
+        top:0px; 
+        opacity:0; 
+        filter:alpha(opacity=0); 
+        -ms-filter:"alpha(opacity=0)"; 
+        -khtml-opacity:0; 
+        -moz-opacity:0;
+    }
+
+    .next_button{
+        position: relative;
+        width: auto;
+        height: 200px;
+        margin: auto;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+        background:white;
+    }
