@@ -5,6 +5,8 @@ from google.cloud import storage
 def upload_to_gcloud(bucket_name, source_file_name, destination_blob_name):
     """Uploads a file to the bucket."""
     storage_client = storage.Client()
+    #storage_client = storage.Client.from_service_account_json("/key.json")
+    
     bucket = storage_client.get_bucket(bucket_name)
     blob = bucket.blob(destination_blob_name)
 
