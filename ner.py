@@ -1,6 +1,5 @@
 import spacy
 from spacy import displacy
-
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -19,5 +18,8 @@ def ner_visualize():
      """
 
     doc = nlp(text)
+    html = displacy.render(doc, style="ent", page=False)
 
-    return displacy.render(doc, style="ent", page=False)
+    with open('templates/NERPage.html', 'a') as html_file:
+        html_file.write(html)
+
