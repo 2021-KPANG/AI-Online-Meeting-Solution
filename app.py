@@ -1,30 +1,41 @@
-# from ner import ner_visualize
+import warnings
+import os
 from flask import Flask, render_template
+from ner import ner_visualize
+warnings.filterwarnings("ignore")
+
 app = Flask(__name__)
 
 
-@app.route('/')
-def start():
-    return render_template("StartPage.html")
+@app.route("/")
+def start_page():
+    file = 'templates/NERPage.html'
+    if os.path.isfile(file):
+        os.remove(file)
+    return render_template('StartPage.html')
 
 
-@app.route('/HTMLPage1.html')
+@app.route("/page1")
 def html_page():
-    return render_template("HTMLPage1.html")
-#
-
-# @app.route('/ner')
-# def ner():
-#     return render_template("NERPage.html")
-#
-#
-
-#
-# @app.route('/ner')
-# def ner():
-#     ner_html = ner_visualize()
-#     return ner_html
+    return render_template('HTMLPage1.html')
 
 
-if __name__ == '__main__':
+@app.route("/OriginPage")
+def origin():
+    return render_template('OriginPage.html')
+
+
+@app.route("/SummaryPage")
+def summary():
+    return render_template('SummaryPage.html')
+
+
+@app.route("/NERPage")
+def ner():
+    ner_visualize()
+    return render_template('NERPage.html')
+
+
+if __name__ == "__main__":
     app.run()
+
