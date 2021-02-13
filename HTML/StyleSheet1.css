@@ -1,4 +1,4 @@
-﻿*{
+*{
         font-family: 'Poppins', sans-serif;
         list-style: none;
         text-decoration: none;
@@ -58,10 +58,10 @@
     .makingmom {
         position: relative;
         width: auto;
-        height: 200px;
+        height: 130px;
         margin: auto;
         display: flex;
-	    align-items: center;
+	    align-items: flex-end;
         justify-content: center;
         background:white;
         letter-spacing: 0.2em;
@@ -80,6 +80,32 @@
         font-size: 60px;
         color:#800080
     }
+
+    .ver{
+        position: relative;
+        width: auto;
+        height: 80px;
+        margin: auto;
+        display: flex;
+	    align-items: flex-start;
+        justify-content: center;
+        background:white;
+    }
+
+    .ver > p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        color:#800080
+    }
+
+    .ver > p > span{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        font-size: 35px;
+        color:#8c8c8c
+    }
+
 
     .file{
         position: relative;
@@ -164,13 +190,12 @@
     .file_select{
         position: relative;
         width: 50%;
-        height: 100px;
+        height: 200px;
         margin: auto;
         display: flex;
 	    align-items: center;
         justify-content: center;
         background:white;
-
     }
     
     .file_input_textbox{
@@ -217,4 +242,48 @@
 	    align-items: center;
         justify-content: center;
         background:white;
+    }
+
+    .result{
+        position: relative;
+        width: 70%;
+        height: 350px;
+        margin: auto;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+        background:white;
+        border: 3px dashed;
+        border-radius: 7px;
+        border-color:#D0A9F5;
+    }
+
+    .download{
+        position: relative;
+        width: auto;
+        height: 100px;
+        margin: auto;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+        background:white;
+    }
+
+    .down_button{
+        width:200px;
+        height:50px;
+        background:#8A0886;
+        margin: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        font-size: 23px;
+        letter-spacing: 0.05em;
+        color: white;
+        float: left;
+        border: 0;
+        box-shadow: 5px 5px 5px #ccc;
+    }
+
+    .down_button:hover{
+        background:#610B5E;
     }
