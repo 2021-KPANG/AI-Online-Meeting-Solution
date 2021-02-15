@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "summer-avenue-303505",
+  "private_key_id": "46ae2f2fd32645adcb239e046680f96e1196b8a0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCp76/1aQ46EPLv\n2oJXlYS1qlrSKmARI0IAvjL5Nf0227Yx7Ia5LFfox+uZXlk3ebfLDhgSLucuN77/\nlJMMAIU1uDp/eGevO1sCj06ZPqTGgfRhBQkeviFtn5yImHTxGnM24n5cLvpSYysV\nvt/wgdPc/K7XKa158LK7REvf9xO9TPgsPojtc7trJJ4ElCeLVUlyPWCHJeQdMvK3\nIPJU8CnNBi7JUXLdU/jhXAPvo3/iD8d5klT4htEhSq+9TycfLZh+KzbC3oaRHHws\n/ln6MZt4DytlhIV80N+aNpyfKfX0hREUdFMla8y7qLt8p+nRP+7DkGJyQrVYN8Mr\nON2xtOwvAgMBAAECggEAOzxCFSTwIRx8WlBMI/SKBHsj2mOMBh1IqhKimQ0RPVib\n604b7hs/b3SUsurY5YYHo3+/s0LnMcybxuJG2aWqyX104q8ZUVM616sVhkR4UnvF\nMDZ9pdo3s8sx2Mlv5gVGyQhtbHuxpRtNTvCwhdjzfXIVDgpInptg6fcWDbVGC7Nh\n2FUx5TShNlyik3eS8XYTkM+RyHox2DEgM/1VDy07zr2hjko3MHXo/Yv80/leqhqC\n3OiJofTef5H96nPsgFy0MOSeq9jOfhvUpfp4PfCmey6PeuRRk3Y89x5vdH8zo6dg\nd9RDUj92P0e0gcfuMrAqkUtyJQ08ukv7GohhxN7lhQKBgQDTYLysT4eCySvEmeI4\nPyt+yY+PEsUH/EWFDzGkUtM0LyDcqr7nAQQD0Bze4vJVInN5YU+mE4rZYwxeNNJu\nn41am4mePvo3K1KP7oERrWH2iciJTh2Rm6XBSI8boRyghvlJiEjp+YA1c3InSBKV\nTXiTHJuvQJvexLbgFUjfN6kBJQKBgQDNz14LUeCP5T0uBb4J2DfVK+ypV2v6ee1r\nFqbRHuSZGUP4efBrv0xiEJ/9dtACr8Y0lbK7xqvk9OVrfMGPlkyklVmM5n1k64lm\nd3XbGL4irWn5x8urMWmZctwBC9+ITkClarA/VrU9riJU6yZZi4YUPEodQrnGBjUw\nt2tA1NfJwwKBgQDJYEvfTRUowEb2UjR2qZfiflxKTfNwHCKPFV6R0mZsPMnt8K1W\nnl0Y1NfscAG2oc+pP9AFxHBvkjFiPqiLw22DeNKu9AilLpzFis9j6+58Vd+7D7ST\n19kePuY3yFHhjTVJnJD6dzxxr759NeieXOQWIxce60qT/IzNBvoZzokwEQKBgFaq\n8oF100kFUgQlaueeY7SjMKAHLnNmEPK9sTXy+nT2TMdAIlxdTH8nXRhRhjr7Zk4S\nlBe7C/v4nPvsp14d/tx4ACPzk+6BuXSq7bh77OWRfUUwO7Y1srBpy/es1k8CFPsT\nuHCTxPLad56m/5lJxgaTdOpphO29A30mYEYG23AdAoGAfiMKagDxphUmIJp8DppW\nPVZ4HCyKHpOao9Ics3tdiKdNUGtTcDjRTUhsvTfuZWwG434oLi+PasFvAw7g2MX7\nkmB+pJylmTJ+wsk61QDq3B2CgD83Tiya8x+1REUGnxl5Zea15wzbPUypEO8v041C\nsiLf+A5AzhHFktv+6AoECvM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "online-meeting-stt@summer-avenue-303505.iam.gserviceaccount.com",
+  "client_id": "103348992579610411882",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/online-meeting-stt%40summer-avenue-303505.iam.gserviceaccount.com"
+}
