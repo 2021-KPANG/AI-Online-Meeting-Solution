@@ -12,5 +12,5 @@ def ner_visualize(text):
 
     with open('templates/SpacyPage.html', 'a') as html_file:
         html_file.write(html)
-    return doc
-
+        html_file.write("{% endblock %}")
+    return
