@@ -8,9 +8,9 @@ warnings.filterwarnings("ignore")
 def ner_visualize(text):
     nlp = spacy.load("en_core_web_sm")
     doc = nlp(text)
-    #html = displacy.render(doc, style="ent", page=False)
+    html = displacy.render(doc, style="ent", page=False)
 
-    # with open('templates/NERPage.html', 'a') as html_file:
-    #     html_file.write(html)
+    with open('templates/SpacyPage.html', 'a') as html_file:
+        html_file.write(html)
     return doc
 

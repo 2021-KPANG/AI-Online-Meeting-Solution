@@ -19,10 +19,14 @@ def start_page():
 def html_page():
     if request.method == 'POST':
         f = request.files['file']
-        f.save('./static/upload_files/' + secure_filename(f.filename))
         global FILENAME
         FILENAME = f.filename
 
+        # If file is not .mp4
+        if ".mp4" not in FILENAME:
+            return render_template('error.html')
+
+        f.save('./static/upload_files/' + secure_filename(FILENAME))
         speech_file = os.path.join('static/upload_files', secure_filename(FILENAME))
         googleAPI.transcribe_gcs(speech_file)
 
@@ -32,9 +36,6 @@ def html_page():
 
 @app.route("/OriginPage")
 def origin():
-    # 업로드 파일 받아오기
-    a = os.listdir("static/text_files")
-
     text = open('./static/text_files/{}'.format(FILENAME.replace("mp4","txt")), mode='rt', encoding='utf-8')
     text = text.read()
 
@@ -43,11 +44,8 @@ def origin():
 
 @app.route("/SummaryPage")
 def summary():
-    # 업로드 파일 받아오기
-    a = os.listdir("static/text_files")
-
     # 텍스트 변수에 받아오기
-    text = open('./upload_files/{}'.format(a[-1]), mode='rt', encoding='utf-8')
+    text = open('./static/text_files/{}'.format(FILENAME.replace("mp4","txt")), mode='rt', encoding='utf-8')
     text = text.read()
     model = Summarizer('distilbert-base-uncased')
     resp = model(text)
@@ -55,15 +53,15 @@ def summary():
     return render_template('SummaryPage.html', data=resp)
 
 
+
 @app.route("/NERPage")
 def ner():
-    # 업로드 파일 받아오기
-    a = os.listdir("static/text_files")
-
     # 텍스트 변수에 받아오기
-    text = open('./upload_files/{}'.format(a[0]), mode='rt', encoding='utf-8')
-    nertext = ner_visualize(text.read())
-    return render_template('NERPage.html', data=nertext)
+    text = open('./static/text_files/{}'.format(FILENAME.replace("mp4", "txt")), mode='rt', encoding='utf-8')
+    ner_visualize(text)
+    return render_template('NERPage.html')
+
+
 
 
 if __name__ == "__main__":

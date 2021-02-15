@@ -4,17 +4,10 @@ from google.cloud import storage
 import moviepy.editor
 # from write_file import make_diarization_file as md_file, make_raw_text_file as mr_file
 
-'''
-1. static/key/ 경로에 구글에서 발급받은 speech-to-text client key 추가
-2. MY_KEY = ".json" 파일 이름만 추가!
-3. RUN
-'''
-
-
 KEYPATH = "./static/key/"
 
-# Change this!!! 
-MY_KEY = "/.json"
+# 이거 변경해주세요!!! 구글에서 다운받은 KEY 입니다
+MY_KEY = "summer-avenue-303505-46ae2f2fd326.json"
 
 def make_diarization_file(text_file_path,filename, operation):
     text_file_name = filename.replace(".mp4", "_drfile.txt")
