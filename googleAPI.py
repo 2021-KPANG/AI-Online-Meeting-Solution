@@ -4,6 +4,18 @@ from google.cloud import storage
 import moviepy.editor
 # from write_file import make_diarization_file as md_file, make_raw_text_file as mr_file
 
+'''
+1. static/key/ 경로에 구글에서 발급받은 speech-to-text client key 추가
+2. MY_KEY = ".json" 파일 이름만 추가!
+3. RUN
+'''
+
+
+KEYPATH = "./static/key/"
+
+# Change this!!! 
+MY_KEY = "/.json"
+
 def make_diarization_file(text_file_path,filename, operation):
     text_file_name = filename.replace(".mp4", "_drfile.txt")
     text_file_name = os.path.join(text_file_path , text_file_name)
@@ -52,7 +64,7 @@ def vtoa(video_file):
 def upload_to_gcloud(bucket_name, source_file_name, destination_blob_name):
     """Uploads a file to the bucket."""
     # storage_client = storage.Client()
-    storage_client = storage.Client.from_service_account_json("./static/key/summer-avenue-303505-46ae2f2fd326.json")
+    storage_client = storage.Client.from_service_account_json(KEYPATH + MY_KEY)
 
     bucket = storage_client.get_bucket(bucket_name)
     blob = bucket.blob(destination_blob_name)
@@ -79,7 +91,7 @@ def transcribe_gcs(mp4_file):
         """Asynchronously transcribes the audio file specified by the gcs_uri."""
 
         # client = speech.SpeechClient()
-        client = speech.SpeechClient.from_service_account_json("./static/key/summer-avenue-303505-46ae2f2fd326.json")
+        client = speech.SpeechClient.from_service_account_json(KEYPATH + MY_KEY)
 
         # bucket에서 오디오 파일가져오기 (파일형식 : gs://~)
         audio = speech.RecognitionAudio(
