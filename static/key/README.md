@@ -2,7 +2,7 @@
 
 googleAPI.py에서 mykey를 변경해주시고 speech to text변환을 해주세요! 
 key받는 방법은 
->>>https://cloud.google.com/speech-to-text/docs/quickstart-client-libraries?hl=ko
+>https://cloud.google.com/speech-to-text/docs/quickstart-client-libraries?hl=ko
 
 
 계정 생성하셔서 키 넣으시고 돌리시면 됩니다.
