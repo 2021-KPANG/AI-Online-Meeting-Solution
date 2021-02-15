@@ -2,11 +2,11 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,200&display=swap" rel="stylesheet">
 
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/StyleSheet1.css')}}">
     <title></title>
 
 </head>
@@ -28,20 +28,18 @@
     <div class="ver">
         <p>- Origin <span>ver.</span> -</p>
     </div>
-    
+
     <div class="result">
-
         <div class="contents">
+            <p>{{data}}</p>
         </div>
-
     </div>
+
 
     <div class="download">
         <button type="button" class="down_button">
          Download
-        </button> 
+        </button>
     </div>
-
-
 </body>
 </html>
