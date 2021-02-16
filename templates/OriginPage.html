@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,200&display=swap" rel="stylesheet">
 
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/StyleSheet1.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/StyleSheet1.css')}}?after">
     <title></title>
 
 </head>
@@ -30,16 +30,16 @@
     </div>
 
     <div class="result">
-        <div class="contents">
-            <p>{{data}}</p>
-        </div>
+        <p>{{data}}</p>
     </div>
 
 
     <div class="download">
-        <button type="button" class="down_button">
-         Download
-        </button>
+        <form method="POST" form action="http://localhost:5000/originpage_download" enctype="multipart/form-data">
+            <button type="submit" class="down_button">
+                Download
+            </button>
+        </form>
     </div>
 </body>
 </html>

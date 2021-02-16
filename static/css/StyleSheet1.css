@@ -234,20 +234,28 @@
     }
 
     .next_button{
+        border-radius:7px;
+        border: none;
+        outline: none;
         position: relative;
         width: auto;
-        height: 200px;
+        height: 150px;
         margin: auto;
         display: flex;
-	    align-items: center;
+        align-items: center;
         justify-content: center;
         background:white;
     }
+    .next_button > button{
+        background-color:white;
+        border: none;
+    }
 
     .result{
+        word-break: keep-all;
         position: relative;
         width: 70%;
-        height: 350px;
+        height: auto;
         margin: auto;
         display: flex;
 	    align-items: center;

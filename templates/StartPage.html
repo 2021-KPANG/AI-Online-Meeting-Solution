@@ -25,21 +25,19 @@
     </div>
 
     <br><br><center>
-    <form action="http://localhost:5000/page1" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" />
-        <input type="submit" onclick="window.location.href='{{ url_for('html_page') }}'">
-    </form>
 </center>
-<!--    <div class="file_select">-->
-<!--        <input type="text" id="fileName" class="file_input_textbox" readonly="readonly">-->
-<!--        <div class="file_input_div">-->
-<!--            <input type="button" value="File Select" class="file_input_button">-->
-<!--            <input type="file" class="file_input_hidden" onchange="javascript:document.getElementById('fileName').value = this.value.split('\\')[this.value.split('\\').length-1]">-->
-<!--        </div>-->
-<!--    </div>-->
-    <div class="next_button">
-        <img src="{{url_for('static', filename='image/next_button.png')}}" width="100px" height="100px" onclick="window.location.href='{{ url_for('html_page') }}'">
-    </div>
+     <form action="http://localhost:5000/page1" method="post" enctype="multipart/form-data">
+        <div class="file_select">
+            <input type="text" id="fileName" class="file_input_textbox" readonly="readonly">
+            <div class="file_input_div">
+                <input type="button" value="File Select" class="file_input_button">
+                <input type="file" name = "file" class="file_input_hidden" onchange="javascript:document.getElementById('fileName').value = this.value.split('\\')[this.value.split('\\').length-1]">
+            </div>
+        </div>
+        <div class="next_button">
+            <button type ="submit" onclick="window.location.href='{{ url_for('html_page') }}'"><img src="{{url_for('static', filename='image/next_button.png')}}" width="150px" height="150px"></button>
+        </div>
+     </form>
 
 </body>
 </html>
