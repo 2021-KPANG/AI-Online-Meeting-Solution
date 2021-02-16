@@ -287,3 +287,48 @@
     .down_button:hover{
         background:#610B5E;
     }
+
+    .error{
+        position: relative;
+        width:380px;
+        height:250px;
+        margin: auto;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+        background:#fff0f5;
+        border: 3px dashed;
+        border-radius: 7px;
+        border-color:#dc143c;
+    }
+
+    .blank{
+        position: relative;
+        width:auto;
+        height:80px;
+        margin: auto;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+    }
+
+    .error_text > p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        color: #b22222;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+    }
+
+    .error_text > span{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 60px;
+        color: #b22222;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+    }
