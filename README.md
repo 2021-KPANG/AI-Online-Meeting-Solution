@@ -28,5 +28,5 @@ return [c.text.strip() for c in doc.sents if max_length > len(c.text.strip()) > 
 - To be updated
 
 ## License
-AI Online Meeting Solution project is licensed under the terms of the Apache License 2.0.
-Copyright KPANG. All Rights Reserved.
+```AI Online Meeting Solution``` project is licensed under the terms of the **Apache License 2.0.**  
+Copyright KPANG. All Rights Reserved. 
