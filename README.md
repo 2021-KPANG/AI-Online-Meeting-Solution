@@ -1,4 +1,9 @@
 # AI Online Meeting Solution
----
-AI Online meeting solution developed by Team KPANG.
-To be updated
+
+## Requirements
+```
+pip install bert-extractive-summarizer
+pip install spacy
+pip install transformers==2.2.2
+pip install neuralcoref
+```
