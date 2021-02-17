@@ -11,7 +11,7 @@ python -m spacy download en_core_web_md
 ## Environment
 - Local Environment
   - If run in local environment, error may occur in *summarizer*
-  - Edit ```sentence_handler.py``` in path ```../site-packages/summarizer```
+  - Edit ```sentence_handler.py``` in path ```../site-packages/summarizer``` as below
 
 ```
 #self.nlp.add_pipe(self.nlp.create_pipe('sentencizer')) to
