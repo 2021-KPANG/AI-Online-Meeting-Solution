@@ -6,6 +6,7 @@ pip install bert-extractive-summarizer
 pip install spacy
 pip install transformers==2.2.2
 pip install neuralcoref
+pip install googleAPI
 python -m spacy download en_core_web_md
 ```
 ## Environment
