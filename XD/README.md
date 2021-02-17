@@ -1,4 +1,4 @@
-# AI Online Meeting Solution
+# AI Online Meeting Solution (Summary)
 
 ## ~1월 마지막 주
 - Kobart모델을 이용한 요약모델을 구상했지만 학습환경(GPU성능 문제)으로 인해서 학습이 제대로 이루어지지 않음  
