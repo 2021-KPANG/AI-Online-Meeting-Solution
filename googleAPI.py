@@ -5,8 +5,8 @@ import moviepy.editor
 # from write_file import make_diarization_file as md_file, make_raw_text_file as mr_file
 
 KEYPATH = "./static/key/"
-
-# 이거 변경해주세요!!! 구글에서 다운받은 KEY 입니다
+BUCKET_NAME = "bucket_stt"
+# Please Change this KEY to your own google-cloud-project KEY
 MY_KEY = "summer-avenue-303505-46ae2f2fd326.json"
 
 def make_diarization_file(text_file_path,filename, operation):
@@ -75,7 +75,7 @@ def transcribe_gcs(mp4_file):
     vtoa(mp4_file)
 
     if file_path:
-        bucket_name = 'bucket_stt'  # Your gcloud bucket name
+        bucket_name = BUCKET_NAME  # Your gcloud bucket name
         audio_file_name = filename.replace(".mp4", ".wav")
         upload_to_gcloud(bucket_name,
                          source_file_name=os.path.join(file_path, audio_file_name),
