@@ -10,16 +10,25 @@ pip install googleAPI
 pip install google.cloud.storage
 pip install google.cloud.speech
 python -m spacy download en_core_web_md
+python -m spacy download en_core_web_sm
 pip install moviepy
 pip install flask
-
+pip install -U pip setuptools wheel
+pip install -U spacy
 ```
 
 - google ERROR
 ```
 pip install --upgrade google.cloud.storage
 pip install --upgrade google.cloud.speech
+=======
+pip install google.cloud
+python -m spacy download en_core_web_md
+pip install -U pip setuptools wheel
+pip install -U spacy
+python -m spacy download en_core_web_sm
 ```
+
 ## Environment
 - Local Environment
   - If run in local environment, error may occur in *summarizer*
@@ -44,3 +53,5 @@ Copyright KPANG. All Rights Reserved.
 
 ## Feature
 - To be updated
+=======
+
