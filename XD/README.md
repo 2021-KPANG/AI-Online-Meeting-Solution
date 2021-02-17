@@ -5,7 +5,7 @@
 	->다른 모델을 이용할 방안 필요
 	
 ## ~2월 첫째 주
-![team_t5](./XD/img/team_t5.PNG)
+![team_t5](./img/team_t5.PNG)
 - T5(Text To Text Transfer Transformers)를 이용한 Summarization모델이 허깅페이스에 공개되어 있어 이를 활용하기로 결정함
 - 뉴스기사와 같은 텍스트 요약성능에 좋은 성능을 보여주는 것을 확인
 - 실제 KPANG 팀 회의 내용을 녹음한 뒤 클로바 노트를 이용해서 텍스트 데이터로 바꾼 뒤 요약을 실행  
