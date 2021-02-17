@@ -24,3 +24,9 @@ In line 22
 #return [c.string.strip() for c in doc.sents if max_length > len(c.string.strip()) > min_length] to
 return [c.text.strip() for c in doc.sents if max_length > len(c.text.strip()) > min_length]
 ```
+## Contributors
+- To be updated
+
+## License
+AI Online Meeting Solution project is licensed under the terms of the Apache License 2.0.
+Copyright KPANG. All Rights Reserved.
