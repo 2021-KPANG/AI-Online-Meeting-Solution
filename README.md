@@ -21,7 +21,6 @@ pip install -U spacy
 ```
 pip install --upgrade google.cloud.storage
 pip install --upgrade google.cloud.speech
-=======
 pip install google.cloud
 python -m spacy download en_core_web_md
 pip install -U pip setuptools wheel
@@ -53,5 +52,4 @@ Copyright KPANG. All Rights Reserved.
 
 ## Feature
 - To be updated
-=======
 
