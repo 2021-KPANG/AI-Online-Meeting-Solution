@@ -25,8 +25,27 @@
   * run.py
 
 
-### [In Progress]
-#### 1. requirements.txt
-  - 이것저것 깔아보면서 하느라 폴더안에 정리를 다 못했습니다..!!
-  
-#### 2. Code comments
+
+##- Want to Use Google Speech-To-Text?
+1. set up a Cloud Console Project
+  - Create or select a **project**
+  - Enable the **Speech-to-Text API** for that project
+  - Create a **service account**
+  - Download a **private key** as JSON
+2.put your key file(.json) in path ```/static/key/```
+3. Install and initialize the Cloud SDK
+4. make Bucket in Cloud storage
+5. Set your bucket_name, key in path ```/googleAPI.py``
+```
+In line 8,
+BUCKET_NAME = "bucket_name"
+
+In line 10,
+MY_KEY = ".json"
+```
+
+
+Reference
+https://cloud.google.com/speech-to-text/docs/quickstart-gcloud?hl=ko
+https://webnautes.tistory.com/1247
+https://cloud.google.com/speech-to-text/docs/async-recognize#speech_transcribe_async-python
