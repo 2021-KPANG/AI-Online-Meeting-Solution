@@ -26,7 +26,7 @@
 
 
 
-##- Want to Use Google Speech-To-Text?
+## Want to Use Google Speech-To-Text?
 1. set up a Cloud Console Project
   - Create or select a **project**
   - Enable the **Speech-to-Text API** for that project
