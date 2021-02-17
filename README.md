@@ -7,6 +7,7 @@ pip install spacy
 pip install transformers==2.2.2
 pip install neuralcoref
 pip install googleAPI
+pip install google.cloud
 python -m spacy download en_core_web_md
 ```
 ## Environment
