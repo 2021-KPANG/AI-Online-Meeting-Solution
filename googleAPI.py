@@ -2,11 +2,12 @@ import os
 from google.cloud import speech
 from google.cloud import storage
 import moviepy.editor
+
 # from write_file import make_diarization_file as md_file, make_raw_text_file as mr_file
 
 KEYPATH = "./static/key/"
 BUCKET_NAME = "bucket_stt"
-# Please Change this KEY to your own google-cloud-project KEY
+# 이거 변경해주세요!!! 구글에서 다운받은 KEY 입니다
 MY_KEY = "summer-avenue-303505-46ae2f2fd326.json"
 
 def make_diarization_file(text_file_path,filename, operation):
@@ -92,8 +93,8 @@ def transcribe_gcs(mp4_file):
 
         # diarization parameter(화자분할_베타)
         drz_config = speech.SpeakerDiarizationConfig(
-            enable_speaker_diarization=True
-            # min_speaker_count = 2,
+            enable_speaker_diarization=True,
+            min_speaker_count = 4,
             # max_speaker_count = 6
         )
 
@@ -112,7 +113,7 @@ def transcribe_gcs(mp4_file):
             audio_channel_count=2,
             enable_word_time_offsets=True,
             diarization_config=drz_config,
-            model = "video",
+            #model = "video",
 
             # automatic punctuation
             enable_automatic_punctuation=True,
@@ -125,7 +126,7 @@ def transcribe_gcs(mp4_file):
             print('Waiting for results...')
 
         text_file_path = './static/text_files'
-        # make_diarization_file(text_file_path, filename, operation)
+        make_diarization_file(text_file_path, filename, operation)
         make_raw_text_file(text_file_path, filename, operation)
 
     else:

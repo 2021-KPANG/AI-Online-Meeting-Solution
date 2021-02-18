@@ -3,8 +3,9 @@ from flask import Flask, render_template, request, send_file
 from ner import ner_visualize
 from werkzeug.utils import secure_filename
 from summarizer import Summarizer
-import os
+import os, numpy as np
 import googleAPI
+import diar_sum, diar_color
 
 warnings.filterwarnings("ignore")
 app = Flask(__name__)
@@ -81,6 +82,27 @@ def ner():
     ner_visualize(text)
     text.close()
     return render_template('SpacyPage.html')
+
+
+@app.route("/diarpage/beta")
+def diar():
+    int_max_length = 5000
+    out_max_length = 100
+
+    f = open('./static/text_files/{}'.format(TEXTFILENAME.replace('.txt', '_drfile.txt')), mode='r', encoding='utf-8')
+    drfile = f.read()
+    f.close()
+
+    # dr_file write
+    speaker_talk, speaker_num, total = diar_sum.speaker(drfile)
+    diar_sum.bertsum(TEXTFILENAME, out_max_length, speaker_talk, speaker_num, total)
+    speaker_map = diar_color.make_speaker_map(TEXTFILENAME.replace('.txt', '_drfile.txt'))
+
+    # dr_file color write
+    s_dr = diar_color.setcolor(filename=TEXTFILENAME.replace('.txt', '_drfile.txt'), speaker_map=speaker_map)
+    s_dr_sum = diar_color.setcolor(filename=TEXTFILENAME.replace('.txt', '_dr_sum_file.txt'), speaker_map=speaker_map)
+
+    return render_template('DiarPage.html', data1=s_dr, data2=s_dr_sum)
 
 
 if __name__ == "__main__":
