@@ -182,9 +182,22 @@
         border: 0;
         box-shadow: 5px 5px 5px #ccc;
     }
-
     .box3:hover{
         background:#DB84A7;
+    }
+
+        .box4{
+        width:200px;
+        height:200px;
+        background:#FDFF8F;
+        float: left;
+        margin: 50px;
+        font-size: 25px;
+        border: 0;
+        box-shadow: 5px 5px 5px #ccc;
+    }
+    .box4:hover{
+        background:#FFE650;
     }
 
     .file_select{
@@ -250,6 +263,11 @@
         background-color:white;
         border: none;
     }
+    .results{
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+    }
 
     .result{
         word-break: keep-all;
@@ -260,6 +278,16 @@
         display: flex;
 	    align-items: center;
         justify-content: center;
+        background:white;
+        border: 3px dashed;
+        border-radius: 7px;
+        border-color:#D0A9F5;
+    }
+    .drresult{
+        word-break: keep-all;
+        width: 40%;
+        height: auto;
+        margin: 50px;
         background:white;
         border: 3px dashed;
         border-radius: 7px;
@@ -294,4 +322,49 @@
 
     .down_button:hover{
         background:#610B5E;
+    }
+
+    .error{
+        position: relative;
+        width:380px;
+        height:250px;
+        margin: auto;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+        background:#fff0f5;
+        border: 3px dashed;
+        border-radius: 7px;
+        border-color:#dc143c;
+    }
+
+    .blank{
+        position: relative;
+        width:auto;
+        height:80px;
+        margin: auto;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+    }
+
+    .error_text > p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        color: #b22222;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
+    }
+
+    .error_text > span{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 60px;
+        color: #b22222;
+        display: flex;
+	    align-items: center;
+        justify-content: center;
     }
