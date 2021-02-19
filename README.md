@@ -9,7 +9,6 @@ pip install neuralcoref
 pip install googleAPI
 pip install google.cloud.storage
 pip install google.cloud.speech
-python -m spacy download en_core_web_md
 python -m spacy download en_core_web_sm
 pip install moviepy
 pip install flask
