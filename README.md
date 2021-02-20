@@ -2,7 +2,7 @@
 ![GitHub](https://img.shields.io/github/license/2021-KPANG/AI-Online-Meeting-Solution)
 ![](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/image/MoM%20logo.JPG?raw=true)
 
-![](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/image/web.gif?raw=true)
+![](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/image/Demo.gif?raw=true)
 
 ## Why should I use Making MoM?
 
