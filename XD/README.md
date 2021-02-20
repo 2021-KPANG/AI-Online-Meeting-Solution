@@ -1,26 +1,23 @@
 # AI Online Meeting Solution (Summary)
 
-## ~1월 마지막 주
-- Kobart모델을 이용한 요약모델을 구상했지만 학습환경(GPU성능 문제)으로 인해서 학습이 제대로 이루어지지 않음  
-	->다른 모델을 이용할 방안 필요
+## Bart
+- a denoising autoencoder for pretraining sequence-to-sequence models  
+- pre-trains a model combining Bidirectional and Auto-Regressive Transformers  
+- trained by 1) corrupting text with an arbitrary noising function, 2) model to reconstruct the original text  
+- A key advantage of this setup is the noising flexibility(a number of noising approaches)  
 	
-## ~2월 첫째 주
+## Data - SAMsum
+- SAMSung Corpus contains over 16,000 chat conversations with manual annotated summaries  
+- Linguists created the conversation by reflecting the percentage of topics in the actual messenger conversation, including various situations such as slang and typos  
+- Summary consists of 3rd person based on conversation  
 
-- T5(Text To Text Transfer Transformers)를 이용한 Summarization모델이 허깅페이스에 공개되어 있어 이를 활용하기로 결정함
-- 뉴스기사와 같은 텍스트 요약성능에 좋은 성능을 보여주는 것을 확인
-+ 실제 KPANG 팀 회의 내용을 녹음한 뒤 클로바 노트를 이용해서 텍스트 데이터로 바꾼 뒤 요약을 실행  
-![team_t5](./img/team_t5.PNG)  
-*T5의 문제점*  
-	+ 화상회의의 좋지 못한 음성품질 때문인지 변환된 텍스트 내용에 잘못 인지한 단어들이 꽤나 많았음  
-	-> T5모델의 경우 생성요약을 하기 때문에 잘못된 단어가 포함되어 있을 경우 원문 내용과 무관한 터무니없는 내용을 생성할 가능성이 있음
-	+ 내용은 이해할 수 있지만 구어체 문장에 조금 어색한 부분이 있음 (Ex 주어와 동사가 제대로 연결되지 못하는 경우)
+![sum_1](./img/sum_1.PNG)  
+- We use SAMsum corpus to fine-tune the bart because the actual conversation is similar to a chat conversation  
 
-## ~2월 둘째 주
-- 위의 문제들을 해결할 방안을 고민하다가 추출모델인 BertsumExt를 찾을 수 있었음  
- ->추출 모델의 경우 원문에서 중요하다고 생각되는 문장들을 골라서 요약으로 표현함  
- ->음성인식으로 잘못 인식된 단어가 들어와도 터무니없는 내용을 생성하지 않음
-- 문재인 대통령 취임사 전문 요약 비교
-![t5bert](./img/t5bert.PNG)
+## Result
+- Results of using ```bart_pretrained_SAMsum.pkl``` 
  
- ## ~2월 셋째 주
- - (베타버전)요약의 성능을 높이기 위해 화자를 분할하여 요약을 해줌
+- The result of cutting 4 sentences(Speech Darization X)  
+![sum_3](./img/sum_3.PNG)
+- The result of cutting 5 speakers(Speech Darization O)
+![sum_2](./img/sum_2.PNG)
