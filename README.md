@@ -4,7 +4,7 @@
 
 ## Why should I use Making MoM?
 
-![](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/image/info_ner.JPG?raw=true)
+![](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/image/why%20use.JPG?raw=true)
 
 ## Requirements
 ```
