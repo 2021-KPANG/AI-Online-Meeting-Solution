@@ -2,6 +2,8 @@
 ![GitHub](https://img.shields.io/github/license/2021-KPANG/AI-Online-Meeting-Solution)
 ![](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/image/MoM%20logo.JPG?raw=true)
 
+***Hire our 'Making MoM' solution as your third-party minute taking assistant!***  👩‍💻✔ 
+
 ![](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/image/Demo.gif?raw=true)
 
 ## Why should I use Making MoM?
