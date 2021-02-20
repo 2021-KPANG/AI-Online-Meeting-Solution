@@ -96,7 +96,7 @@ def diar():
     # dr_file write
     speaker_talk, speaker_num, total = diar_sum.speaker(drfile)
     diar_sum.bertsum(TEXTFILENAME, out_max_length, speaker_talk, speaker_num, total)
-    speaker_map = diar_color.make_speaker_map(TEXTFILENAME.replace('.txt', '_drfile.txt'))
+    speaker_map = diar_color.make_speaker_map(TEXTFILENAME.replace('.txt', '_dr_sum_file.txt'))
 
     # dr_file color write
     s_dr = diar_color.setcolor(filename=TEXTFILENAME.replace('.txt', '_drfile.txt'), speaker_map=speaker_map)
