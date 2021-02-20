@@ -15,7 +15,7 @@
    - Automatically summarized minutes into few sentences.
    - Beta version also provides speaker diarized summaries.
 - Highlighted Minutes 📆
-  - Visualize *person's name, organization, time, location, number, etc* in your minutes and grasp essential information at once.
+  - Visualize ```person's name```, ```organization```, ```time```, ```location```, ```number```, etc in your minutes and grasp essential information at once.
 - Afterwards, everyone knows what was said, what was decided upon and who has to do what next!
 
 ## Requirements
