@@ -6,6 +6,18 @@
 
 ![](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/image/why%20use.JPG?raw=true)
 
+### We provide all-in-one service of :
+- Professional Minute Taking ✒️
+  - Objective, third-party minute taking for virtual and teleconference meetings.
+- Transcriptional Services 📄
+	- We provide not only the transcripts of whole meeting but also speaker diarized transcripts.
+- Summarized Transcripts 🔆
+   - Automatically summarized minutes into few sentences.
+   - Beta version also provides speaker diarized summaries.
+- Highlighted Minutes 📆
+  - Visualize *person's name, organization, time, location, number, etc* in your minutes and grasp essential information at once.
+- Afterwards, everyone knows what was said, what was decided upon and who has to do what next!
+
 ## Requirements
 ```
 pip install bert-extractive-summarizer
