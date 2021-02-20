@@ -2,6 +2,10 @@
 ![GitHub](https://img.shields.io/github/license/2021-KPANG/AI-Online-Meeting-Solution)
 ![](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/image/MoM%20logo.JPG?raw=true)
 
+## Why should I use Making MoM?
+
+![](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/image/info_ner.JPG?raw=true)
+
 ## Requirements
 ```
 pip install bert-extractive-summarizer
