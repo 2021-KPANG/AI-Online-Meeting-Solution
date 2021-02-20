@@ -20,4 +20,4 @@
 - The result of cutting 4 sentences(Speech Darization X)  
 ![sum_3](./img/sum_3.PNG)
 - The result of cutting 5 speakers(Speech Darization O)
-![sum_2](./img/sum_2.PNG)
+![sum_2](./img/sum_2.png)
