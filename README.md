@@ -24,7 +24,7 @@
 ---
 
 ## Installation
-1. Install all [Requirements](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/README.md#requirements) below.
+1. Install all [Requirements](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/README.md#requirements).
 2. Download Bart model from this [[link]](https://drive.google.com/file/d/12RByU6-do8Q5G87ExlYci9-alZZjThZk/view?usp=sharing).
 3. Paste downloaded model to ```/data``` directory.
 4. Set up a Cloud Console Project.
