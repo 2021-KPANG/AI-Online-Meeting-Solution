@@ -95,12 +95,17 @@ def diar():
 
     # dr_file write
     speaker_talk, speaker_num, total = diar_sum.speaker(drfile)
-    diar_sum.bertsum(TEXTFILENAME, out_max_length, speaker_talk, speaker_num, total)
-    speaker_map = diar_color.make_speaker_map(TEXTFILENAME.replace('.txt', '_dr_sum_file.txt'))
+    # diar_sum.bertsum(TEXTFILENAME, out_max_length, speaker_talk, speaker_num, total)
+    diar_sum.bart(TEXTFILENAME, drfile, total, speaker_num)
+    speaker_map = diar_color.make_speaker_map(TEXTFILENAME.replace('.txt', '_drfile.txt'))
 
     # dr_file color write
     s_dr = diar_color.setcolor(filename=TEXTFILENAME.replace('.txt', '_drfile.txt'), speaker_map=speaker_map)
     s_dr_sum = diar_color.setcolor(filename=TEXTFILENAME.replace('.txt', '_dr_sum_file.txt'), speaker_map=speaker_map)
+
+    # f = open('./static/text_files/{}'.format(TEXTFILENAME.replace('.txt', '_dr_sum_file.txt')), mode='r', encoding='utf-8')
+    # s_dr_sum = f.read()
+    # f.close()
 
     return render_template('DiarPage.html', data1=s_dr, data2=s_dr_sum)
 
