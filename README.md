@@ -33,10 +33,15 @@ pip install googleAPI
 pip install google.cloud.storage
 pip install google.cloud.speech
 python -m spacy download en_core_web_sm
+python -m spacy download en_core_web_md
 pip install moviepy
 pip install flask
 pip install -U pip setuptools wheel
 pip install -U spacy
+pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+pip install fastai==2.2.5
+pip install ohmeow-blurr
+pip install datasets
 ```
 
 - google ERROR
@@ -44,16 +49,6 @@ pip install -U spacy
 pip install --upgrade google.cloud.storage
 pip install --upgrade google.cloud.speech
 pip install google.cloud
-python -m spacy download en_core_web_md
-
-pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
-pip install fastai==2.2.5
-pip install ohmeow-blurr
-pip install datasets
-
-pip install -U pip setuptools wheel
-pip install -U spacy
-python -m spacy download en_core_web_sm
 ```
 
 ## Environment
