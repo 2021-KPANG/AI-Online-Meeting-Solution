@@ -1,4 +1,12 @@
 # AI Online Meeting Solution (Summary)
+## Bertsum
+-Bert-based Extractive Summarization  
+-Word using Clustering (Kmeans) in the Output Vector of BERT Summarization by selecting the closest vector to the vector mean (center)  
+-Excellent in task processing speed by using Distillbert, which is lightweight of existing BERT  
+
+## Result
+- Results of using *bartsum*
+![sum_1](./img/sum_4.PNG) 
 
 ## Bart
 - a denoising autoencoder for pretraining sequence-to-sequence models  
@@ -19,5 +27,5 @@
  
 - The result of cutting 4 sentences(Speech Darization X)  
 ![sum_3](./img/sum_3.PNG)
-- The result of cutting 5 speakers(Speech Darization O)
+- The result of cutting 4 speakers(Speech Darization O)
 ![sum_2](./img/sum_2.png)
