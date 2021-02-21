@@ -69,8 +69,16 @@ In line 22,
 return [c.text.strip() for c in doc.sents if max_length > len(c.text.strip()) > min_length]
 ```
 
+## Documentation
+1. [Speech-To-Text](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/Speech_to_Text/README.md)
+2. [Summarization](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/Summarization/README.md)
+3. [Named Entity Recognition(NER)](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/tree/main/named_entity_recognition)
+4. [Web Usage(HTML)](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/HTML/README.md)
+5. [Business](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/Business/Business.pdf)
+
+
 ## Contributors
-Lim Sejin, Soyoung Cho, Hwaseung Jeon, Heeseung  An, Jiyeon Jang and  Jisuk Ryu
+[Lim Sejin](https://github.com/LimSeJin9577), [Soyoung Cho](https://github.com/SoYoungCho), [Hwaseung Jeon](https://github.com/HwaseungJeon), [Heeseoung  An](https://github.com/hiseoung), [Jiyeon Jang](https://github.com/jji1902) and  [Jisuk Ryu](https://github.com/jsryu0624)
 
 ## License
 ```
