@@ -34,7 +34,7 @@
 - Download a private key as JSON 2.put your key file(.json) in path ```/static/key/```
 5. Install and initialize the Cloud SDK.
 6. Make Bucket in Cloud storage.
-7. Set your bucket_name, key in path ```/googleAPI.py``
+7. Set your bucket_name, key in path ```/googleAPI.py```.
 ```
 In line 8,
 BUCKET_NAME = "bucket_name"
