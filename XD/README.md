@@ -1,8 +1,8 @@
 # MoM - Summary 
 ## Bertsum
--Bert-based Extractive Summarization  
--Word using Clustering (Kmeans) in the Output Vector of BERT Summarization by selecting the closest vector to the vector mean (center)  
--Excellent in task processing speed by using Distillbert, which is lightweight of existing BERT  
+- Bert-based Extractive Summarization  
+- Word using Clustering (Kmeans) in the Output Vector of BERT Summarization by selecting the closest vector to the vector mean (center)  
+- Excellent in task processing speed by using Distillbert, which is lightweight of existing BERT  
 
 ## Result
 - Results of using *Bertsum*  
