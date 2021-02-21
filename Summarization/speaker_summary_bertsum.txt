@@ -1,0 +1,10 @@
+speaker : 3
+
+speaker1 :
+you can read the handouts for a detailed account but in short Hazard reported last week. is a revised delivery schedule so I can share it with a client
+speaker2 :
+well thank you everyone this was very pretty again
+speaker3 :
+so I'm happy to report we have succeeded in rebooting our. yet as I said I had very good progress with the design.
+
+summary : so I'm happy to report we have succeeded in rebooting our. is a revised delivery schedule so I can share it with a client. well thank you everyone this was very pretty again
