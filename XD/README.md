@@ -5,7 +5,7 @@
 -Excellent in task processing speed by using Distillbert, which is lightweight of existing BERT  
 
 ## Result
-- Results of using *bartsum*  
+- Results of using *Bertsum*  
 ![sum_1](./img/sum_4.PNG) 
 
 ## Bart
