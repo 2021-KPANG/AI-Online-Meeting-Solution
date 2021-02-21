@@ -46,6 +46,6 @@ MY_KEY = ".json"
 
 
 Reference
-https://cloud.google.com/speech-to-text/docs/quickstart-gcloud?hl=ko
-https://webnautes.tistory.com/1247
-https://cloud.google.com/speech-to-text/docs/async-recognize#speech_transcribe_async-python
+https://cloud.google.com/speech-to-text/docs/quickstart-gcloud?hl=ko  
+https://webnautes.tistory.com/1247  
+https://cloud.google.com/speech-to-text/docs/async-recognize#speech_transcribe_async-python  
