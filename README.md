@@ -24,7 +24,7 @@
 ---
 
 ## Installation
-1. Install all ```Requirements``` below.
+1. Install all [Requirements](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/README.md#requirements) below.
 2. Download Bart model from this [[link]](https://drive.google.com/file/d/12RByU6-do8Q5G87ExlYci9-alZZjThZk/view?usp=sharing).
 3. Move downloaded model to ```/data``` directory.
 4. Set up a Cloud Console Project.
@@ -44,7 +44,7 @@ MY_KEY = ".json"
 ```
 8. Run ```app.py```.
 9. ***Making MoM*** is running on ```http://127.0.0.1:5000/```.
-10. Refer to above instructions for error.
+10. Refer to [instructions](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/README.md#google ERROR) for error.
 
 ## Requirements
 ```
@@ -67,7 +67,7 @@ pip install ohmeow-blurr
 pip install datasets
 ```
 
-- google ERROR
+## google ERROR
 ```
 pip install --upgrade google.cloud.storage
 pip install --upgrade google.cloud.speech
