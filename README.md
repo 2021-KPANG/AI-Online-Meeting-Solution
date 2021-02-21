@@ -68,7 +68,8 @@ In line 22
 #return [c.string.strip() for c in doc.sents if max_length > len(c.string.strip()) > min_length] to
 return [c.text.strip() for c in doc.sents if max_length > len(c.text.strip()) > min_length]
 ```
-
+- Bart Model Download Link
+  - https://drive.google.com/file/d/12RByU6-do8Q5G87ExlYci9-alZZjThZk/view?usp=sharing
 ## Contributors
 Lim Sejin, Soyoung Cho, Hwaseung Jeon, Heeseung  An, Jiyeon Jang and  Jisuk Ryu
 
