@@ -28,10 +28,10 @@
 2. Download Bart model from this [[link]](https://drive.google.com/file/d/12RByU6-do8Q5G87ExlYci9-alZZjThZk/view?usp=sharing).
 3. Paste downloaded model to ```/data``` directory.
 4. Set up a Cloud Console Project.
-  - Create or select a project
-  - Enable the Speech-to-Text API for that project
-  - Create a service account
-  - Download a private key as JSON 2.put your key file(.json) in path ```/static/key/```
+    - Create or select a project
+    - Enable the Speech-to-Text API for that project
+    - Create a service account
+    - Download a private key as JSON 2.put your key file(.json) in path ```/static/key/```
 5. Install and initialize the Cloud SDK.
 6. Make Bucket in Cloud storage.
 7. Set your bucket_name, key in path ```/googleAPI.py```.
