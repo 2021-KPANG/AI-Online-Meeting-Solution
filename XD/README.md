@@ -6,7 +6,7 @@
 
 ## Result
 - Results of using *Bertsum*  
-![sum_1](./img/sum_4.PNG) 
+![sum_4](./img/sum_4.PNG) 
 
 ## Bart
 - a denoising autoencoder for pretraining sequence-to-sequence models  
