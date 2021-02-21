@@ -66,7 +66,29 @@ In line 22,
 return [c.text.strip() for c in doc.sents if max_length > len(c.text.strip()) > min_length]
 ```
 
-- Bart Model Download [Link](https://drive.google.com/file/d/12RByU6-do8Q5G87ExlYci9-alZZjThZk/view?usp=sharing)
+## Installation
+
+1. Install all ```Requirements``` above.
+2. Download Bart model from this [[link]](https://drive.google.com/file/d/12RByU6-do8Q5G87ExlYci9-alZZjThZk/view?usp=sharing).
+3. Move downloaded model to ```/data``` directory.
+4. Set up a Cloud Console Project.
+- Create or select a project
+- Enable the Speech-to-Text API for that project
+- Create a service account
+- Download a private key as JSON 2.put your key file(.json) in path ```/static/key/```
+5. Install and initialize the Cloud SDK.
+6. Make Bucket in Cloud storage.
+7. Set your bucket_name, key in path ```/googleAPI.py``
+```
+In line 8,
+BUCKET_NAME = "bucket_name"
+
+In line 10,
+MY_KEY = ".json"
+```
+8. Run ```app.py```.
+9. ***Making MoM*** is running on ```http://127.0.0.1:5000/```.
+10. Refer to above instructions for error.
 
 ## Documentation
 1. [Speech-To-Text](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/Speech_to_Text/README.md)
@@ -74,7 +96,6 @@ return [c.text.strip() for c in doc.sents if max_length > len(c.text.strip()) > 
 3. [Named Entity Recognition(NER)](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/tree/main/named_entity_recognition)
 4. [Web Usage(HTML)](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/HTML/README.md)
 5. [Business](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/Business/Business.pdf)
-
 
 
 ## Contributors
