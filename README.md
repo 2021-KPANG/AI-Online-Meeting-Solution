@@ -71,12 +71,15 @@ In line 22,
 return [c.text.strip() for c in doc.sents if max_length > len(c.text.strip()) > min_length]
 ```
 
+- Bart Model Download [Link](https://drive.google.com/file/d/12RByU6-do8Q5G87ExlYci9-alZZjThZk/view?usp=sharing)
+
 ## Documentation
 1. [Speech-To-Text](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/Speech_to_Text/README.md)
 2. [Summarization](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/Summarization/README.md)
 3. [Named Entity Recognition(NER)](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/tree/main/named_entity_recognition)
 4. [Web Usage(HTML)](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/HTML/README.md)
 5. [Business](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/Business/Business.pdf)
+
 
 
 ## Contributors
