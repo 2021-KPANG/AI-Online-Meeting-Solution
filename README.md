@@ -1,6 +1,6 @@
 #  Making MoM
 ![GitHub](https://img.shields.io/github/license/2021-KPANG/AI-Online-Meeting-Solution)
-***Hire our 'Making MoM' solution as your third-party minute taking assistant!***  👩‍💻✔ 
+- ***Hire our 'Making MoM' solution as your third-party minute taking assistant!***  👩‍💻✔ 
 ![](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/image/MoM%20logo.JPG?raw=true)
 
 ![](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/image/Demo.gif?raw=true)
@@ -20,6 +20,8 @@
 - Highlighted Minutes 📆
   - Visualize ```person's name```, ```organization```, ```time```, ```location```, ```number```, etc in your minutes and grasp essential information at once.
 - Afterwards, everyone knows what was said, what was decided upon and who has to do what next!
+
+---
 
 ## Requirements
 ```
@@ -64,14 +66,24 @@ In line 10,
 #self.nlp.add_pipe(self.nlp.create_pipe('sentencizer')) to
 self.nlp.add_pipe("sentencizer")
 
-In line 22
+In line 22,
 #return [c.string.strip() for c in doc.sents if max_length > len(c.string.strip()) > min_length] to
 return [c.text.strip() for c in doc.sents if max_length > len(c.text.strip()) > min_length]
 ```
-- Bart Model Download Link
-  - https://drive.google.com/file/d/12RByU6-do8Q5G87ExlYci9-alZZjThZk/view?usp=sharing
+
+- Bart Model Download [Link](https://drive.google.com/file/d/12RByU6-do8Q5G87ExlYci9-alZZjThZk/view?usp=sharing)
+
+## Documentation
+1. [Speech-To-Text](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/Speech_to_Text/README.md)
+2. [Summarization](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/Summarization/README.md)
+3. [Named Entity Recognition(NER)](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/tree/main/named_entity_recognition)
+4. [Web Usage(HTML)](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/HTML/README.md)
+5. [Business](https://github.com/2021-KPANG/AI-Online-Meeting-Solution/blob/main/Business/Business.pdf)
+
+
+
 ## Contributors
-Lim Sejin, Soyoung Cho, Hwaseung Jeon, Heeseung  An, Jiyeon Jang and  Jisuk Ryu
+[Lim Sejin](https://github.com/LimSeJin9577), [Soyoung Cho](https://github.com/SoYoungCho), [Hwaseung Jeon](https://github.com/HwaseungJeon), [Heeseoung  An](https://github.com/hiseoung), [Jiyeon Jang](https://github.com/jji1902) and  [Jisuk Ryu](https://github.com/jsryu0624)
 
 ## License
 ```
